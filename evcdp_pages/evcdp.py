@@ -88,6 +88,9 @@ def render():
         prediction_df = pd.DataFrame(list(predicted_energy.items()), 
                                    columns=["Station", "Predicted Energy (kWh)"])
         prediction_df = prediction_df.sort_values(by="Predicted Energy (kWh)", ascending=False)
+
+        # Round the predicted energy to 2 decimal places
+        prediction_df["Predicted Energy (kWh)"] = prediction_df["Predicted Energy (kWh)"].round(2)
         
         # Reset the index and drop it to avoid displaying the index
         prediction_df = prediction_df.reset_index(drop=True)
