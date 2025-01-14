@@ -61,44 +61,6 @@ def render():
         """
     )
 
-    # # Add sections with improved content
-    # st.markdown(
-    #     """
-    #     ---
-    #     ### Contact
-    #     - Email: evcharginghub@gmail.com
-    #     - Phone : 0126568788
-
-        
-    #     """
-    # )
-
-    # # Add sections with improved content
-    # st.markdown(
-    #     """
-    #     ---
-    #     ### Why Predict EV Charging Demand?
-    #     Predicting the next-day charging demand for EV stations brings numerous advantages:
-        
-    #     - **Optimized Resource Allocation**: Ensures chargers and energy supplies are allocated efficiently.
-    #     - **Energy Grid Management**: Helps electricity providers balance energy loads and avoid grid overloads.
-    #     - **Dynamic Pricing Strategies**: Supports demand-based pricing to reduce congestion during peak hours.
-    #     - **Data-Driven Expansion Planning**: Guides the development of new stations or upgrades in high-demand areas.
-    #     - **Supports Malaysia's Green Agenda**: Aligns with the nation's goals for sustainability and EV adoption.
-
-    #     ---
-    #     ### Benefits for Malaysia
-    #     By forecasting EV demand, we:
-        
-    #     - Enhance **user experience** with reduced waiting times and better reliability.
-    #     - Support the **Low Carbon Mobility Blueprint (2021–2030)** to promote sustainable transportation.
-    #     - Facilitate **cost savings** for operators and optimize the integration of renewable energy.
-    #     - Ensure **preparedness for demand surges**, such as during public holidays or severe weather.
-
-        
-    #     """
-    # )
-
     # Add a footer section
     st.markdown(
         """
