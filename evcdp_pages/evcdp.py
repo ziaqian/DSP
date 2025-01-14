@@ -89,8 +89,10 @@ def render():
                                    columns=["Station", "Predicted Energy (kWh)"])
         prediction_df = prediction_df.sort_values(by="Predicted Energy (kWh)", ascending=False)
 
+        prediction_df_2dp = prediction_df.copy()
+        
         # Format the predicted energy to 2 decimal places
-        prediction_df_2dp["Predicted Energy (kWh)"] = prediction_df["Predicted Energy (kWh)"].apply(lambda x: f"{x:.2f}")
+        prediction_df_2dp["Predicted Energy (kWh)"] = prediction_df_2dp["Predicted Energy (kWh)"].apply(lambda x: f"{x:.2f}")
         
         # Reset the index and drop it to avoid displaying the index
         prediction_df_2dp = prediction_df_2dp.reset_index(drop=True)
