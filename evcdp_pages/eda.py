@@ -15,7 +15,7 @@ def load_data():
     data['Month'] = data['Timestamp'].dt.month
     data['DayOfMonth'] = data['Timestamp'].dt.day
     data['Hour'] = data['Timestamp'].dt.hour
-    data'Weekday'] = data['Timestamp'].dt.weekday  # 0 = Monday, 6 = Sunday
+    data['Weekday'] = data['Timestamp'].dt.weekday  # 0 = Monday, 6 = Sunday
     # Map numeric weekday values to their corresponding names
     weekday_map = {0: "Monday", 1: "Tuesday", 2: "Wednesday", 3: "Thursday", 4: "Friday", 5: "Saturday", 6: "Sunday"}
     data['Weekday'] = data['Weekday'].map(weekday_map)
