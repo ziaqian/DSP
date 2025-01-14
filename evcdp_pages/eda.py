@@ -1,12 +1,3 @@
-#import streamlit as st
-
-# def render():
-#     st.title("📊 EDA")
-#     st.markdown("### Exploratory Data Analysis")
-#     st.write("This section will include insights and visualizations from the data.")
-
-#     imageeda = "DASHBOARD.jpg"
-#     st.image(imageeda, use_column_width=True)
 
 import pandas as pd
 import streamlit as st
@@ -16,10 +7,18 @@ import matplotlib.pyplot as plt
 # Function to load data
 @st.cache_data
 def load_data():
-    data_file = "synthetic_ev_session_varied_weekdays_transformed.csv"  # Update if needed
+    data_file = "synthetic_ev_session_varied_weekdays.csv" 
     data = pd.read_csv(data_file)
     data['Timestamp'] = pd.to_datetime(data['Timestamp'])
     data['Day'] = data['Timestamp'].dt.date  # Add 'Day' column
+    data['Year'] = data['Timestamp'].dt.year
+    data['Month'] = data['Timestamp'].dt.month
+    data['DayOfMonth'] = data['Timestamp'].dt.day
+    data['Hour'] = data['Timestamp'].dt.hour
+    data'Weekday'] = data['Timestamp'].dt.weekday  # 0 = Monday, 6 = Sunday
+    # Map numeric weekday values to their corresponding names
+    weekday_map = {0: "Monday", 1: "Tuesday", 2: "Wednesday", 3: "Thursday", 4: "Friday", 5: "Saturday", 6: "Sunday"}
+    data['Weekday'] = data['Weekday'].map(weekday_map)
     return data
 
 # Function to filter data
