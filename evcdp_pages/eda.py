@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 # Function to load data
 @st.cache_data
 def load_data():
-    data_file = "synthetic_ev_session_varied_weekdays.csv" 
+    data_file = "synthetic_ev_session_highways_my.csv" 
     data = pd.read_csv(data_file)
     data['Timestamp'] = pd.to_datetime(data['Timestamp'])
     data['Day'] = data['Timestamp'].dt.date  # Add 'Day' column
