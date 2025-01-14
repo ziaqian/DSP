@@ -34,7 +34,7 @@ def filter_data(data, start_date, end_date):
 
 # EDA Page
 def render():
-    st.title("Exploratory Data Analysis (EDA) for EV Charging Stations")
+    st.title("Exploratory Data Analysis (EDA)")
 
     # Load data
     data = load_data()
