@@ -31,7 +31,7 @@ def render():
     col5, spacer1, col6 = st.columns([4, 1, 5])
     
     with col5:
-        st.image('lstm_architecture.png', caption='LSTM Architecture Diagram', use_container_width=True)
+        st.image('lstm_architecture.png', caption='LSTM Architecture Diagram', use_column_width=True)
         
     with col6:
         st.markdown("""
