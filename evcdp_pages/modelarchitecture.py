@@ -117,51 +117,6 @@ def render():
     
     st.markdown("---")
     
-    # # Comparative Analysis with container for better spacing
-    # with st.container():
-    #     st.markdown("## Comparative Analysis")
-        
-    #     comparison_data = {
-    #         "Feature": [
-    #             "Architecture Complexity",
-    #             "Training Speed",
-    #             "Memory Requirements",
-    #             "Feature Extraction",
-    #             "Temporal Learning",
-    #             "Parameter Count",
-    #             "Best Use Case"
-    #         ],
-    #         "CNN-LSTM": [
-    #             "High",
-    #             "Moderate",
-    #             "High",
-    #             "Excellent",
-    #             "Excellent",
-    #             "Highest",
-    #             "Complex temporal data with local patterns"
-    #         ],
-    #         "GRU": [
-    #             "Moderate",
-    #             "Fast",
-    #             "Moderate",
-    #             "Good",
-    #             "Good",
-    #             "Lowest",
-    #             "Simpler temporal patterns, limited data"
-    #         ],
-    #         "LSTM": [
-    #             "Moderate",
-    #             "Moderate",
-    #             "Moderate",
-    #             "Good",
-    #             "Excellent",
-    #             "Moderate",
-    #             "Long sequential dependencies"
-    #         ]
-    #     }
-        
-    #     comparison_df = pd.DataFrame(comparison_data)
-    #     st.dataframe(comparison_df, use_container_width=True)
     
     # Common Features in a container for consistent spacing
     with st.container():
