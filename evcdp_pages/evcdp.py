@@ -175,5 +175,5 @@ def render():
         
         with col3:
             st.metric("Highest Demand Station", 
-                     f"{prediction_df.iloc[0]['Station']}\n({prediction_df.iloc[0]['Predicted Energy (kWh)']:.2f} kWh)")
+                     prediction_df.iloc[0]['Station'])
 
