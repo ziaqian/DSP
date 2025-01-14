@@ -12,7 +12,7 @@ import plotly.graph_objects as go
 @st.cache_resource
 def load_best_model():
     # Explicitly map the 'mse' loss function
-    return load_model("cnnlstm_ev_model.h5", custom_objects={"MeanSquaredError": MeanSquaredError(), "mse": mse_loss()})
+    return load_model("cnnlstm_ev_model.h5", custom_objects={"MeanSquaredError": MeanSquaredError()})
     # return load_model("cnnlstm_ev_model.h5", custom_objects={"mse": MeanSquaredError()})
 
 # Main function for the EVCDP page
