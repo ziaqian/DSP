@@ -6,7 +6,7 @@ def render():
     st.write("Platform for predicting electric vehicle charging demand across charging stations in Malaysia.")
 
     # Add an image
-    st.image("D:\LZQ\Y3S1\DSP\EVCDP Streamlit\EVCDPHub.jpg",  use_container_width=True)
+    st.image("EVCDPHub",  use_container_width=True)
 
     # Intro
     st.markdown(
