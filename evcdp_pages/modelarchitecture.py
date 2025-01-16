@@ -36,15 +36,15 @@ def render():
     with col6:
         st.markdown("""
         ### Structure
-        - Input Layer (7,14) → LSTM → Dropout → LSTM → Dropout → Dense
+        - Input Layer → LSTM → Dropout → LSTM → Dropout → Dense
         
         ### Key Components
-        - Dual LSTM layers (64 → 32 units)
+        - Dual LSTM layers
         - Dropout layers for regularization
-        - Dense layer (14 units)
+        - Dense layer 
         
         ### Justification
-        - Classic architecture for time series
+        - Classic modern architecture for time series
         - Excellent at capturing long-term dependencies
         - Proven track record in sequence modeling
         - Advantages include:
@@ -66,14 +66,14 @@ def render():
     with col2:
         st.markdown("""
         ### Structure
-        - Input Layer (7,14) → Conv1D → MaxPooling1D → LSTM → Dropout → LSTM → Dropout → Dense
+        - Input Layer → Conv1D → MaxPooling1D → LSTM → Dropout → LSTM → Dropout → Dense
         
         ### Key Components
-        - 1D Convolution (64 filters)
+        - 1D Convolution 
         - MaxPooling1D for dimensionality reduction
-        - Dual LSTM layers (64 → 32 units)
+        - Dual LSTM layers 
         - Strategic dropout layers
-        - Dense layer (14 units)
+        - Dense layer 
         
         ### Justification
         - CNN extracts local patterns and features
@@ -98,12 +98,12 @@ def render():
     with col4:
         st.markdown("""
         ### Structure
-        - Input Layer (7,14) → GRU → Dropout → GRU → Dropout → Dense
+        - Input Layer → GRU → Dropout → GRU → Dropout → Dense
         
         ### Key Components
-        - Dual GRU layers (64 → 32 units)
+        - Dual GRU layers 
         - Dropout layers for regularization
-        - Dense layer (14 units)
+        - Dense layer
         
         ### Justification
         - Simpler alternative to LSTM
